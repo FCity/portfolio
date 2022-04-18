@@ -1,7 +1,19 @@
+/* MOBILE 1ST */
+
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Cantarell');
+@import url('https://fonts.googleapis.com/css?family=Saira Extra Condensed');
+
+/* COLORS */
 :root {
   --light: #fcfcfc;
-  --dark: #333;
+  --mid-light: #999;
+  --mid-dark: #666;
+  --dark: #111;
 }
+
+/* BASICS */
 
 * {
   box-sizing: border-box;
@@ -10,73 +22,11 @@
 }
 
 body {
-  background-color: var(--light);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: var(--dark);
+  background-color: var(--dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
-}
-
-header {
-  background-color: #111;
-  color: var(--light);
-  padding: 1em 0 .25em 1em;
-}
-
-.img-container {
-  padding: 1em 0 .5em 0;
-}
-
-.img-wrapper {
-  background-color: var(--light);
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-}
-
-section {
-  padding: 1em;
-}
-
-section:nth-child(1) {
-  padding-top: 2em;
-}
-
-.description p {
-  font-size: 1.25rem;
-  line-height: 1.5em;
-  font-style: italic;
-}
-
-.technologies *, .projects * {
-  line-height: 2em;
-}
-
-.technologies ul {
-  padding-left: 1em;
-}
-
-.projects div {
-  padding: 1em;
-}
-
-.project-title {
-  cursor: pointer;
-}
-
-.screenshot {
-  max-width: 70vw;
-  height: 70vh;
-  position: fixed;
-  top: 20vh;
-  right: 5vw;
-  z-index: 1;
-}
-
-.none {
-  display: none;
 }
 
 ul {
@@ -85,36 +35,351 @@ ul {
 }
 
 a {
-  color: darkblue;
+  color: var(--light);
+  text-decoration: none;
+  transition: opacity .25s ease-in-out;
 }
 
+a:hover {
+  opacity: .7;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid var(--light);
+  border-radius: .25em;
+  font-size: 2rem;
+  color: var(--light);
+  padding: .5em 2em;
+}
+
+.btn:hover {
+  background-color: #226;
+}
+
+.container {
+  font-family: Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--light);
+}
+
+nav *, .section-heading, .project-name, .img-wrapper, .technologies h2, footer {
+  font-family: 'Saira Extra Condensed';
+  letter-spacing: .05em;
+}
+
+.section-heading {
+  padding: .5em 0 1em .5em;
+}
+
+.none {
+  display: none;
+}
+
+
+/* NAV */
+
+nav {
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mid-light);
+  margin: .25em;
+  padding: .1em .66em;
+  border-right: 1px solid var(--mid-dark);
+}
+
+.title h2 {
+  font-size: 1.5rem;
+  padding: .25em .25em .25em .4em;
+}
+
+.tabs {
+  display: none;
+}
+
+
+/* PROJECTS */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.project-img {
+  border: 1px solid #333;
+  border-bottom: 0;
+  border-radius: .25em .25em 0 0;
+}
+
+.project-img img {
+  border-radius: .25em .25em 0 0;
+  max-width: 100%;
+  height: 100%;
+}
+
+.project-img {
+  cursor: pointer;
+}
+
+.project-info {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 0 0 .25em .25em;
+}
+
+.project-name {
+  border-bottom: 1px solid #333;
+  font-size: 1.3rem;
+  padding-left: .5em;
+}
+
+.project-desc {
+  padding: 1em;
+}
+
+
+/* ABOUT */
+
+#about {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.about-body {
+  padding: 1em .5em 3em .5em;
+}
+
+.about-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+}
+
+.img-wrapper {
+  background-color: var(--dark);
+  width: 100vw;
+  height: 100%;
+}
+
+.img-container {
+  background-image: url('images/photo.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: .8;
+  width: 200px;
+  height: 100%;
+  margin: auto;
+}
+
+.description p {
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  width: 100vw;
+  padding-top: 1em;
+  text-align: center;
+  font-style: italic;
+}
+
+.technologies *, .projects * {
+  line-height: 2em;
+}
+
+.technologies h2 {
+  font-size: 1.25rem;
+  padding-top: 1.5em;
+  padding-left: .5em;
+}
+
+.technologies ul {
+  padding-left: 1em;
+}
+
+.tech-row {
+  display: flex;
+  align-items: center;
+}
+
+.tech-row img {
+  margin: .5em;
+}
+
+
+/* LINKS */
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  display: flex;
+  padding: 3em 2em;
+}
+
+.link i {
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.link p {
+  display: none;
+}
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: .5em;
+}
+
+/* DESKTOP */
+
 @media only screen and (min-width: 768px) {
+
+  /* BASICS */
   .container {
     text-align: center;
   }
 
-  header {
-    padding-top: 3em;
+  .section-heading {
+    font-size: 3rem;
+    padding: 1.5em 0 2em 0;
   }
 
-  .img-container {
-    padding: 3em;
+  /* NAV */
+  nav {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .brand {
+    border: 1px solid var(--mid-dark);
+    width: 50px;
+    height: 50px;
+  }
+  
+  .title h2 {
+    font-size: 2rem;
+    padding: .25em 1em .25em .5em;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .tab {
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+  /* PROJECTS */
+  .project {
+    width: 60%;
+  }
+
+  .project-name {
+    font-size: 1.8rem;
+  }
+
+  /* ABOUT */
+  .about-top {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .img-wrapper {
-    margin: auto;
-    width: 200px;
-    height: 200px;
+    background-color: transparent;
+    width: auto;
+    height: 100%;
   }
 
-  section {
-    padding: 3em;
-    border-bottom: 1px solid #eee;
+  .description p {
+    font-size: 1.25rem;
+    width: 33vw;
+    line-height: 2.5em;
   }
 
-  .screenshot {
-    max-width: 50vw;
-    height: 500px;
-    right: 20vw;
+  .technologies h2 {
+    font-size: 2rem;
+  }
+
+  .tech-row {
+    justify-content: center;
+  }
+
+  /* LINKS */
+  #links {
+    padding-bottom: 100px;
+  }
+
+  .link a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link i {
+    font-size: 2rem;
+  }
+
+  .link p {
+    display: inline-block;
+    margin-top: .5em;
+  }
+
+  /* FOOTER */
+  footer {
+    padding-top: 6em;
+    font-size: 1.1rem;
+  }
+}
+
+
+/* SUPER DESKTOP */
+@media only screen and (min-width: 1600px) {
+  /* PROJECTS */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 49%);
+    column-gap: 5px;
+    justify-content: center;
+  }
+
+  .project {
+    width: 100%;
   }
 }
