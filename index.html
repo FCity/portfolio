@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Frank Calderon</title>
-		<link rel="shortcut icon" href="https://icon-library.com/images/fc-icon/fc-icon-26.jpg" type="image/x-icon">
+		<link rel="shortcut icon" href="images/favicon.ico.jpg" type="image/x-icon">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 		<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,51 +33,212 @@
 			</div>
 		</nav>
 
+		<section id="landing">
+			<div class="text">
+				<h1 class="name"></h1>
+				<h3 class="job"></h3>
+				<div class="fx"></div>
+			</div>
+		</section>
+
 		<section id="projects">
 			<h1 class="section-heading">Projects</h1>
 
-			<div class="projects">
-				<div class="project">
-					<div class="project-img">
-						<a href="https://fcity.github.io/batt-man" target="_blank" title="Go to Site">
-							<img src="images/screenshot-battman.jpg" alt="BattMan">
-						</a>
+			<h2 class="mini-section-heading">Originals</h2>
+
+			<div class="carousel">
+				<div class="arrow" id="arrow-left-originals" title="Previous">&laquo;</div>
+
+				<div class="projects originals">
+					<div class="project original" id="original-1">
+						<div class="project-img">
+							<a href="https://fcity.github.io/batt-man" target="_blank" title="Go to Site">
+								<img src="images/screenshot-battman-2.jpg" alt="BattMan">
+							</a>
+						</div>
+						<div class="project-info">
+							<h3 class="project-name">BattMan</h3>
+							<p class="project-desc">
+								A frontend app that keeps track of your batteries' expiration dates
+							</p>
+						</div>
+						<div class="project-links">
+							<div class="project-link">
+								<a href="https://fcity.github.io/batt-man" target="_blank" title="Go to Site">
+									<h3>Site</h3>
+								</a>
+							</div>
+							<div class="project-link">
+								<a href="https://github.com/FCity/batt-man" target="_blank" title="Go to Repo">
+									<h3>Code</h3>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="project-info">
-						<h3 class="project-name">BattMan</h3>
-						<p class="project-desc">
-							A purely frontend app that will keep track of your batteries' expiration
-						</p>
+
+					<div class="project original" id="original-2">
+						<div class="project-img">
+							<a href="https://fcity.github.io/ecommerce" target="_blank" title="Go to Site">
+								<img src="images/screenshot-ecommerce.jpg" alt="eCommerce">
+							</a>
+						</div>
+						<div class="project-info">
+							<h3 class="project-name">eCommerce</h3>
+							<p class="project-desc">
+								A sample ecommerce app in React with an item gallery and cart functionality
+							</p>
+						</div>
+						<div class="project-links">
+							<div class="project-link">
+								<a href="https://fcity.github.io/ecommerce" target="_blank" title="Go to Site">
+									<h3>Site</h3>
+								</a>
+							</div>
+							<div class="project-link">
+								<a href="https://github.com/FCity/ecommerce" target="_blank" title="Go to Repo">
+									<h3>Code</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project original" id="original-3">
+						<div class="project-img">
+							<a href="https://github.com/FCity/graf1" target="_blank" title="Go to Repo">
+								<img src="images/screenshot-graf1.jpg" alt="graF1">
+							</a>
+						</div>
+						<div class="project-info">
+							<h3 class="project-name">graF1</h3>
+							<p class="project-desc">
+								A frontend app that graphs the race winners of any Formula 1 season
+							</p>
+						</div>
+						<div class="project-links">
+							<div class="project-link" style="width: 100%;">
+								<a href="https://github.com/FCity/graf1" target="_blank" title="Go to Repo">
+									<h3>Code</h3>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<div class="project">
-					<div class="project-img">
-						<a href="https://fcity.github.io/ecommerce" target="_blank" title="Go to Site">
-							<img src="images/screenshot-ecommerce.jpg" alt="eCommerce">
-						</a>
+				<div class="arrow" id="arrow-right-originals" title="Next">&raquo;</div>
+			</div>
+
+			<h2 class="mini-section-heading">Challenges</h2>
+
+			<div class="carousel">
+				<div class="arrow" id="arrow-left-challenges" title="Previous">&laquo;</div>
+
+				<div class="projects challenges">
+					<div class="project challenge" id="challenge-1">
+						<div class="project-img">
+							<a href="https://fcity.github.io/nft-preview-card-component" target="_blank" title="Go to Site">
+								<img src="images/screenshot-nft-card.jpg" alt="NFT Card Component">
+							</a>
+						</div>
+						<div class="project-info">
+							<h3 class="project-name">NFT Card Component</h3>
+							<p class="project-desc">
+								Frontend Mentor - NFT preview card component
+							</p>
+						</div>
+						<div class="project-links">
+							<div class="project-link">
+								<a href="https://fcity.github.io/nft-preview-card-component" target="_blank" title="Go to Site">
+									<h3>Site</h3>
+								</a>
+							</div>
+							<div class="project-link">
+								<a href="https://github.com/FCity/nft-preview-card-component" target="_blank" title="Go to Repo">
+									<h3>Code</h3>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="project-info">
-						<h3 class="project-name">eCommerce</h3>
-						<p class="project-desc">
-							A sample ecommerce app in React with an item gallery and cart functionality
-						</p>
+
+					<div class="project challenge" id="challenge-2">
+						<div class="project-img">
+							<a href="https://fcity.github.io/base-apparel-coming-soon" target="_blank" title="Go to Site">
+								<img src="images/screenshot-base-apparel.jpg" alt="Base Apparel Coming Soon Page">
+							</a>
+						</div>
+						<div class="project-info">
+							<h3 class="project-name">Base Apparel Coming Soon Page</h3>
+							<p class="project-desc">
+								Frontend Mentor - Base Apparel coming soon page
+							</p>
+						</div>
+						<div class="project-links">
+							<div class="project-link">
+								<a href="https://fcity.github.io/base-apparel-coming-soon" target="_blank" title="Go to Site">
+									<h3>Site</h3>
+								</a>
+							</div>
+							<div class="project-link">
+								<a href="https://github.com/FCity/base-apparel-coming-soon" target="_blank" title="Go to Repo">
+									<h3>Code</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project challenge" id="challenge-3">
+						<div class="project-img">
+							<a href="https://fcity.github.io/sunnyside-agency-landing-page" target="_blank" title="Go to Site">
+								<img src="images/screenshot-sunnyside.jpg" alt="Sunnyside Agency Landing Page">
+							</a>
+						</div>
+						<div class="project-info">
+							<h3 class="project-name">Sunnyside Agency Landing Page</h3>
+							<p class="project-desc">
+								Frontend Mentor - Sunnyside Agency Landing Page
+							</p>
+						</div>
+						<div class="project-links">
+							<div class="project-link">
+								<a href="https://fcity.github.io/sunnyside-agency-landing-page" target="_blank" title="Go to Site">
+									<h3>Site</h3>
+								</a>
+							</div>
+							<div class="project-link">
+								<a href="https://github.com/FCity/sunnyside-agency-landing-page" target="_blank" title="Go to Repo">
+									<h3>Code</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project challenge" id="challenge-4">
+						<div class="project-img">
+							<a href="https://fcity.github.io/hatchways-frontend" target="_blank" title="Go to Site">
+								<img src="images/screenshot-hatchways-2.jpg" alt="Hatchways Front End Assessment">
+							</a>
+						</div>
+						<div class="project-info">
+							<h3 class="project-name">Hatchways Front End Assessment</h3>
+							<p class="project-desc">
+								The Hatchways Front End Assessment
+							</p>
+						</div>
+						<div class="project-links">
+							<div class="project-link">
+								<a href="https://fcity.github.io/hatchways-frontend" target="_blank" title="Go to Site">
+									<h3>Site</h3>
+								</a>
+							</div>
+							<div class="project-link">
+								<a href="https://github.com/FCity/hatchways-frontend" target="_blank" title="Go to Repo">
+									<h3>Code</h3>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<div class="project">
-					<div class="project-img">
-						<a href="https://github.com/FCity/graf1" target="_blank" title="Go to Repo">
-							<img src="images/screenshot-graf1.jpg" alt="graF1">
-						</a>
-					</div>
-					<div class="project-info">
-						<h3 class="project-name">graF1</h3>
-						<p class="project-desc">
-							A frontend app that graphs the race winners of any Formula 1 season
-						</p>
-					</div>
-				</div>
+				<div class="arrow" id="arrow-right-challenges" title="Next">&raquo;</div>
 			</div>
 		</section>
 
@@ -90,7 +252,7 @@
 					</div>
 	
 					<div class="description">
-						<p>Hi! I'm Frank, a frontend developer with full stack skills &mdash; open to work and grow on any stack. </p>
+						<p>Hi, my name is Frank. I'm a frontend developer</p>
 					</div>
 				</div>
 	
@@ -101,7 +263,7 @@
 						<div class="tech-row">
 							 <img width="60" height="60" src="images/html5-logo.jpg" alt="HTML5" title="HTML5">
 							 <img width="60" height="60" src="images/css3-logo.jpg" alt="CSS3" title="CSS3">
-							 <img width="60" height="60" src="images/js-logo.jpg" alt="JS" title="Javascript">
+							 <img width="60" height="60" src="images/js-logo-2.jpg" alt="JS" title="Javascript">
 						</div>
 						<div class="tech-row">
 							<img width="70" height="60" src="images/react-logo.jpg" alt="ReactJS" title="ReactJS">
@@ -154,5 +316,7 @@
 			<p>&copy;2022 by Frank Calderon</p>
 		</footer>
 	</div>
+
+<script src="app.js"></script>
 </body>
 </html>
