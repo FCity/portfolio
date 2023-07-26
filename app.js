@@ -1,15 +1,12 @@
 window.onload = () => {
   const desktopView = () => {
     if (window.screen.width > 768) {
-      console.log('Desktop')
-
       document.querySelector('#original-1').style.display = 'flex'
       document.querySelector('#challenge-1').style.display = 'flex'
 
       const originals = document.getElementsByClassName('original')
-      console.log('originals:', originals)
       const challenges = document.getElementsByClassName('challenge')
-      console.log('challenges:', challenges)
+      
       let currentOriginal = 0
       let currentChallenge = 0
 
